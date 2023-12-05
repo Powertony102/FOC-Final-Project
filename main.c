@@ -1,16 +1,24 @@
 #include <stdio.h>
-#include "startup.h"
+#include "dataType.h"
+#include "startUp.h"
+#include "editCourse.h"
+#include "editGrade.h"
+#include "expectedFinalGrade.h"
+#include "io.h"
 
 int main() {
     int opt = 0;
-    startUp();
+    startMenu();
     while (~scanf("%d", &opt) && opt != 5) {
-        /*
-        if (opt == 1) // edit course   
-        if (opt == 2) // edit grade
         if (opt == 3) // expected final grade
-        if (opt == 4) // view course
-        */
+            expectedFinalGrade();
     }
     return 0;
 }
+
+/*
+    if (opt == 1) // edit course   
+    if (opt == 2) // edit grade
+
+    if (opt == 4) // view course
+*/

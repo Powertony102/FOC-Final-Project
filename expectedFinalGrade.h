@@ -1,0 +1,2 @@
+void expectedFinalGradeMenu();
+void viewAllCourses();
